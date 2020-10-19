@@ -1,66 +1,44 @@
-# Template de départ pour Table Schema
+# Schéma des attributs des arbres urbains
 
-Ce dépôt contient les fichiers nécessaires pour démarrer la création d'un dépôt pour un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+Ce schéma permet de modéliser les différents attributs des arbres urbains afin de faciliter l'inventaire et la gestion du patrimoine arboré. Ces attributs peuvent être des caractéristiques liées à l'arbre ou au milieu dans lequel il se trouve. Il permet de géolocaliser les arbres afin de pouvoir les visualiser sur une carte. 
 
-## Utiliser ce template
+## Contexte
 
-- Si vous créez votre dépôt sur GitHub, il vous suffit d'appuyer sur le bouton vert "Use this template". Consultez [la documentation](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) pour plus d'infos ;
-- Si votre projet sera hébergé ailleurs (par exemple Gitlab), vous pouvez cloner ce répertoire ou télécharger les fichiers correspondants. Utilisez le bouton "Clone or download".
+Les méthodes d'inventaire et de gestion des arbres en ville sont diverses. On peut le voir en regardant les modèles publiés en Open Data par certaines villes comme [Paris](https://opendata.paris.fr/explore/dataset/les-arbres/information/?disjunctive.typeemplacement&disjunctive.arrondissement&disjunctive.libellefrancais&disjunctive.genre&disjunctive.espece&disjunctive.varieteoucultivar&disjunctive.stadedeveloppement&disjunctive.remarquable) et [Monptellier](https://data.montpellier3m.fr/dataset/arbres-dalignement-de-montpellier).  
+Afin de standardiser les données récoltées lors de l'inventaire, la co-construction d'une schéma de données pour l'arbre urbain a été lancée par [Natural Solutions](https://www.natural-solutions.eu/qui-sommes-nous). Ce schéma à pour but d'aller vers une uniformisation des données récoltées sur les arbres en ville afin de mieux les connaitre et les gérer.   
 
-## Fichiers disponibles
+### Cadrage juridique
 
-Ce dépôt contient un ensemble de fichiers utiles pour un dépôt d'un schéma [Table Schema](https://specs.frictionlessdata.io/table-schema/).
+* L’[article 123-1-5 du Code de l’urbanisme](https://www.legifrance.gouv.fr/codes/id/LEGIARTI000031105321/2015-08-19/) permet de localiser, dans les PLU, des éléments de paysage à protéger et de définir des prescriptions de nature à assurer leurs préservations.
 
-- [`CHANGELOG.md`](CHANGELOG.md) contient la liste des changements entre les différentes versions de votre schéma ;
-- [`exemple-valide.csv`](exemple-valide.csv) est un fichier CSV d'exemple conforme par rapport au schéma décrit dans `schema.json`  ;
-- [`exemple-valide.xlsx`](exemple-valide.xlsx) est un fichier XLSX d'exemple conforme par rapport au schéma décrit dans `schema.json` ;
-- [`LICENSE.md`](LICENSE.md) est le fichier de licence du dépôt. Nous recommandons d'utiliser la [Licence Ouverte](https://www.etalab.gouv.fr/licence-ouverte-open-licence), cette licence est recommandée par l'administration française pour le partage de données et de documents ;
-- [`README.md`](README.md) est le fichier que vous lisez actuellement. À terme, il devra présenter votre schéma ;
-- [`requirements.txt`](requirements.txt) liste les dépendances Python nécessaires pour effectuer des tests en intégration continue sur votre dépôt ;
-- [`schema.json`](schema.json) est le schéma au format Table Schema.
+* Un accident sur une voie publique causé par la chute d'un arbre ou d'une branche peut engager la responsabilité d'une collectivité au titre d'un défaut d'entretien normal de l'ouvrage public.
 
-### Intégration continue
+## Finalité
 
-Ce dépôt est configuré pour utiliser de l'intégration continue, si vous utilisez GitHub. À chaque commit, une suite de tests sera lancée via [GitHub Actions](https://github.com/features/actions) afin de vérifier :
+Les données sur les arbres sont très importantes pour les collectivités afin d'améliorer la gestion du patrimoine arboré. Ainsi, il y a moins de risque d'accident dû à des problématiques d'entretien sur les arbres. 
 
-- que votre schéma est valide à la spécification Table Schema ;
-- que vos fichiers d'exemples sont conformes au schéma.
+La connaissance du patrimoine arboré a aussi une importance scientifique. La standardisation des données récoltées sur les arbres urbains pourrait permettre de mieux les étudier : par exemple en comparant la croissance des arbres en ville et les contraintes du milieu.  
 
-Si vous n'utilisez pas GitHub, vous pouvez lancer ces tests sur votre machine ou sur un autre service d'intégration continue comme Gitlab CI, Jenkins, Circle CI, Travis etc. Consultez la configuration utilisée dans [`.github/workflows/test.yml`](.github/workflows/test.yml).
+## Transmission des données
 
-Localement, voici la procédure à suivre pour installer l'environnement de test et lancer les tests :
+Dans le but de constituer un répertoire national des arbres urbains, ouvert et accessible à tous, les collectivités peuvent transmettre systématiquement, sous forme de tableau mis à jour, les données relatives aux attributs de leurs arbres urbains.
 
-```bash
-# Création d'un environnement virtuel en Python 3
-python3 -m venv venv
-source venv/bin/activate
+Elles peuvent ajouter le mot-clef `arbre` lors de la publication du jeu de données sur leur espace de publication.
 
-# Installation des dépendances
-pip install -r requirements.txt
+### Format des fichiers
+Le fichier doit être encodé en UTF-8 et utiliser le point-virgule comme séparateur de colonnes. L'en-tête de colonne sur la première ligne est obligatoire. Tous les champs sont obligatoires ; si la donnée n'est pas disponible, la colonne doit être présente et vide.
 
-# Test de la validité du schéma
-frictionless validate --source-type schema schema.json
+Nom du fichier : `AAAAMMJJ_nom_Arbres_Urbains.csv` avec `nom` étant le nom de la collectivité productrice des données, par exemple pour la commune de Marseille `20201018_Marseille_Arbres_Urbains.csv`.
 
-# Test de la conformité des fichiers d'exemples
-frictionless validate --schema schema.json exemple-valide.csv
-frictionless validate --schema schema.json exemple-valide.xlsx
-```
+### Fichiers d'exemple
+Nous mettons à disposition des fichiers d'exemple qui peuvent servir de base pour renseigner vos lieux de covoiturage.
 
-## Étapes à suivre
+- [Télécharger un fichier exemple au format CSV](https://github.com/NaturalSolutions/schema-arbre/blob/master/exemple-valide.csv)
+- [Télécharger un fichier exemple au format Excel](https://github.com/NaturalSolutions/schema-arbre/blob/master/exemple-valide.xlsx)
 
-Nous détaillons ci-dessous les étapes que nous vous conseillons de suivre après avoir créé votre dépôt Git, tout en utilisant les fichiers d'exemples.
+### Mises à jour
+Les mises à jour sont effectuées à partir du fichier communiqué précédemment et en reprennent, en les modifiant le cas échéant, les données qui y figurent déjà.
 
-- [ ] Décrire votre schéma dans le fichier `schema.json` en respectant la spécification Table Schema. Le fichier d'exemple comprend des valeurs d'exemples pour toutes les métadonnées possibles. Notez que les champs d'exemple ne comprennent qu'une petite partie des types, formats et contraintes disponibles, référez-vous à [la documentation](https://specs.frictionlessdata.io/table-schema/#types-and-formats) pour toutes les valeurs possibles. Si certaines métadonnées ne sont pas nécessaires pour votre projet, vous pouvez les supprimer. Pour vérifier que votre schéma est conforme, vous pouvez utiliser l'outil [tableschema](https://pypi.org/project/tableschema/) en ligne de commande : `tableschema validate schema.json`
-- [ ] Modifier les fichiers d'exemples CSV et XLSX avec des données conformes à votre schéma. L'outil [frictionless](https://pypi.org/project/frictionless/) permet de vérifier que vos fichiers sont conformes au schéma en ligne de commande `frictionless validate --schema schema.json exemple-valide.csv`
-- [ ] Modifier le fichier [`CHANGELOG.md`](CHANGELOG.md) pour indiquer la publication initiale
-- [ ] Modifier le fichier [`README.md`](README.md), en supprimant tout son contenu tout d'abord. Au sein de plusieurs paragraphes, vous indiquerez le contexte, les modalités de production des données, le cadre juridique, la finalité, les cas d’usage etc. Consultez plusieurs schémas sur [schema.data.gouv.fr](https://schema.data.gouv.fr) pour découvrir quelles informations sont pertinentes à indiquer
-- [ ] Vérifier que la licence ouverte vous convient. Si vous devez utiliser une autre licence, modifiez le fichier [`LICENSE.md`](LICENSE.md) et indiquez la licence dans le fichier [`schema.json`](schema.json), dans la clé `licenses`
+## Consolidation
+Natural Solutions consolidera ce schéma avec d'autres ateliers de co-construction. Pour en savoir plus : https://www.natural-solutions.eu/blog/le-nouveau-schma-de-donnes-pour-larbre-urbain-se-co-construitnbsp
 
-
-## Documentation
-
-Pour vous aider dans la construction de votre dépôt, nous vous recommandons de vous référer à :
-
-- [Le guide à destination des producteurs de schéma](https://guides.etalab.gouv.fr/producteurs-schemas/)
-- [La documentation de schema.data.gouv.fr](https://schema.data.gouv.fr)
-- [La spécification Table Schema](https://specs.frictionlessdata.io/table-schema/)
