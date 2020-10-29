@@ -26,7 +26,7 @@
        {
          "title":"Ressource valide (XLSX)",
          "name":"exemple-valide-xlsx",
-         "path":"https://raw.githubusercontent.com/NaturalSolutions/schema-arbre/v0.2.0/exemple-valide.csv"
+         "path":"https://raw.githubusercontent.com/NaturalSolutions/schema-arbre/v0.2.0/exemple-valide.xlsx"
        }
     ],
     "sources":[
