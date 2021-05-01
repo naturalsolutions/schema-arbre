@@ -23,6 +23,9 @@ La connaissance du patrimoine arboré a aussi une importance scientifique. La st
 
 Dans le but de constituer un répertoire national des arbres urbains, ouvert et accessible à tous, les collectivités peuvent transmettre systématiquement, sous forme de tableau mis à jour, les données relatives aux attributs de leurs arbres urbains.
 
+## Outil 
+Vous pouvez utiliser l'outil https://ecoteka.org/ pour vous faciliter le travail
+
 Elles peuvent ajouter le mot-clef `arbre` lors de la publication du jeu de données sur leur espace de publication.
 
 ### Format des fichiers
