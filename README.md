@@ -23,9 +23,6 @@ La connaissance du patrimoine arboré a aussi une importance scientifique. La st
 
 Dans le but de constituer un répertoire national des arbres urbains, ouvert et accessible à tous, les collectivités peuvent transmettre systématiquement, sous forme de tableau mis à jour, les données relatives aux attributs de leurs arbres urbains.
 
-## Outil 
-Vous pouvez utiliser l'outil https://ecoteka.org/ pour vous faciliter le travail
-
 Elles peuvent ajouter le mot-clef `arbre` lors de la publication du jeu de données sur leur espace de publication.
 
 ### Format des fichiers
@@ -44,4 +41,7 @@ Les mises à jour sont effectuées à partir du fichier communiqué précédemme
 
 ## Consolidation
 Natural Solutions consolidera ce schéma avec d'autres ateliers de co-construction. Pour en savoir plus : https://www.natural-solutions.eu/blog/le-nouveau-schma-de-donnes-pour-larbre-urbain-se-co-construitnbsp
+
+## Outil 
+Vous pouvez utiliser l'outil https://ecoteka.org/ pour vous faciliter le travail
 
