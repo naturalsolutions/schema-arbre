@@ -46,5 +46,5 @@ Natural Solutions consolidera ce schéma avec d'autres ateliers de co-constructi
 Vous pouvez utiliser l'outil https://ecoteka.org/ pour vous faciliter le travail
 
 ## Sources
-Un fichier répertoriant toutes les sources des données ouvertes d'arbres est disponible ici : https://naturalsolutionsfr.sharepoint.com/:x:/r/sites/ProjetsNS/_layouts/15/Doc.aspx?sourcedoc=%7B97410569-4101-4CF2-9D72-D3C4CDD73518%7D&file=OpenData%20Trees%20Inventory.xlsx&action=default&mobileredirect=true
-
+Un fichier répertoriant toutes les sources des données ouvertes d'arbres est disponible ici :
+https://urlz.fr/ghiU
