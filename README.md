@@ -48,3 +48,7 @@ Vous pouvez utiliser l'outil https://ecoteka.org/ pour vous faciliter le travail
 ## Sources
 Un fichier répertoriant toutes les sources des données ouvertes d'arbres est disponible ici :
 https://urlz.fr/ghiU
+
+## Information 
+https://natural-solutions-world
+https://www.natural-solutions.eu/
