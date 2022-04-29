@@ -50,5 +50,5 @@ Un fichier répertoriant toutes les sources des données ouvertes d'arbres est d
 https://urlz.fr/ghiU
 
 ## Information 
-https://natural-solutions-world
-https://www.natural-solutions.eu/
+- https://natural-solutions-world
+- https://www.natural-solutions.eu/
