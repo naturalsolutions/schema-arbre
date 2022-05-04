@@ -136,7 +136,17 @@
          }
       },
       {
-          "name":"famille_arbre",
+         "name":"date_releve",
+         "description":"Date à laquelle les données ont été relevées pour cet arbre",
+         "example":"1996-07-12",
+         "type":"date",
+         "format":"%Y-%m-%d",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+          "name":"famille",
           "description":"Le taxon auquel appartient l'arbre en latin (cinquième niveau de la classification classique).",
           "example":"Platanaceae",
           "type":"string",
@@ -145,7 +155,7 @@
           }
       },
       {
-         "name":"genre_arbre",
+         "name":"genre",
          "description":"La subdivision de la famille auquel appartient l'arbre en latin (sixième niveau de la classification classique).",
          "example":"Platanus",
          "type":"string",
@@ -154,16 +164,16 @@
          }
       },
       {
-         "name":"espece_arbre",
-         "description":"",
-         "example":"",
+         "name":"espece",
+         "description":"La subdivision du genre auquel appartient l'arbre en latin (septième niveau de la classification classique)",
+         "example":"occidentalis",
          "type":"string",
          "constraints":{
             "required":false
          }
       },
       {
-         "name":"cultivar_variete_arbre",
+         "name":"cultivar_variete",
          "description":"La subdivision de l'espèce auquel appartient l'arbre en latin.",
          "example":"Cripps Pink'",
          "type":"string",
@@ -210,7 +220,7 @@
          }
       },
       {
-         "name":"matricule_arbre",
+         "name":"matricule",
          "description":"L'identifiant unique de l'arbre au norme de la collectivité.",
          "example":"A20200525",
          "type":"string",
@@ -224,6 +234,15 @@
          "example":"1996-07-12",
          "type":"date",
          "format":"%Y-%m-%d",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"stade_developpement",
+         "description":"La maturité de l'arbre en fonction de sa date de plantation",
+         "example":"Adulte",
+         "type":"string",
          "constraints":{
             "required":false
          }
@@ -249,10 +268,42 @@
             "minimum":0,
             "maximum":3000
          }
-      },{
+      },
+      {
+         "name":"circonference",
+         "description":"La circonférence de l'arbre mesurée à hauteur d'homme, c'est-à-dire 150 exprimé en cm",
+         "example":"70",
+         "type":"number",
+         "constraints":{
+            "required":false,
+            "minimum":0,
+            "maximum":3000
+         }
+      },
+      {
+         "name":"diametre_couronne",
+         "description":"Le diamètre du houpier de l'arbre exprimé en mètre",
+         "example":"2",
+         "type":"number",
+         "constraints":{
+            "required":false,
+            "minimum":0,
+            "maximum":100
+         }
+      },
+      {
          "name":"type_sol",
          "description":"La composition pédologique du sol où est planté l'arbre",
          "example":"Argileux",
+         "type":"string",
+         "constraints":{
+            "required":false
+         }
+      },
+      {
+         "name":"description_pied_arbre",
+         "description":"Aménagement présent sur le sol autour du pied de l'arbre",
+         "example":"Présence d'une grille",
          "type":"string",
          "constraints":{
             "required":false
@@ -277,7 +328,7 @@
          }
       },
       {
-         "name":"arbre_remarquable",
+         "name":"remarquable",
          "description":"Classification de l'arbre à remarquable selon son âge, sa circonférence et sa hauteur",
          "example":"Oui",
          "type":"boolean",
@@ -310,7 +361,7 @@
          }
       },
       {
-         "name":"arbre_protege",
+         "name":"protege",
          "description":"Si l'arbre fait l'objet d'une classification et d'une protection",
          "example":"Non",
          "type":"boolean",

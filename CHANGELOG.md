@@ -2,6 +2,25 @@
 
 Ce fichier répertorie les changements entre différentes versions d'un schéma.
 
+
+## Version 0.3.0 - 2022-05-04
+
+Ajout de champs : 
+- "date_releve"
+- "stade_developpement"
+- "circonference"
+- "diametre_couronne"
+- "description_pied_arbre"
+
+Simplification et homogénéisation des noms des champs comportant le mot "arbre":
+- "famille_arbre" > "famille"
+- "genre_arbre" > "genre"
+- "espece_arbre" > "espece"
+- "cultivar_variete_arbre" > "cultivar_variete"
+- "matricule_arbre" > "matricule"
+- "arbre_remarquable" > "remarquable"
+- "arbre_protege" > "protege"
+
 ## Version 0.2.0 - 2020-10-21
 
 Ajout de contraintes sur plusieurs champs : 
