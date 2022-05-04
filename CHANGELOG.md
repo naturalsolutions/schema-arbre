@@ -21,6 +21,10 @@ Simplification et homogénéisation des noms des champs comportant le mot "arbre
 - "arbre_remarquable" > "remarquable"
 - "arbre_protege" > "protege"
 
+Ajout de la description du champ "espèce"
+
+Précision de la description du champ "id"
+
 ## Version 0.2.0 - 2020-10-21
 
 Ajout de contraintes sur plusieurs champs : 
