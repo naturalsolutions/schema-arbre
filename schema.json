@@ -165,8 +165,8 @@
       },
       {
          "name":"espece",
-         "description":"",
-         "example":"",
+         "description":"La subdivision du genre auquel appartient l'arbre en latin (septième niveau de la classification classique)",
+         "example":"occidentalis",
          "type":"string",
          "constraints":{
             "required":false
