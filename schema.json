@@ -105,7 +105,7 @@
     "fields":[
        {
           "name":"id",
-          "description":"Un identifiant unique de l'objet arbre.",
+          "description":"Un identifiant unique de l'objet arbre pour le jeu de données. Au possible garder le même identifiant pour un arbre dans le cadre d'une republication de données.",
           "example":"42",
           "type":"integer",
           "constraints":{
