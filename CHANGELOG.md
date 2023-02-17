@@ -6,7 +6,7 @@ Ce fichier répertorie les changements entre différentes versions d'un schéma.
 ## Version 0.3.0 - 2022-05-04
 
 Ajout de champs : 
-- "date_releve"
+- "date_releve"s
 - "stade_developpement"
 - "circonference"
 - "diametre_couronne"
