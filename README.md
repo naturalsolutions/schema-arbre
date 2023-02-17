@@ -2,7 +2,7 @@
 
 Ce schéma permet de modéliser les différents attributs des arbres urbains afin de faciliter l'inventaire et la gestion du patrimoine arboré. Ces attributs peuvent être des caractéristiques liées à l'arbre ou au milieu dans lequel il se trouve. Il permet de géolocaliser les arbres afin de pouvoir les visualiser sur une carte. 
 
-## Contexte
+## lol
 
 Les méthodes d'inventaire et de gestion des arbres en ville sont diverses. On peut le voir en regardant les modèles publiés en Open Data par certaines villes comme [Paris](https://opendata.paris.fr/explore/dataset/les-arbres/information/?disjunctive.typeemplacement&disjunctive.arrondissement&disjunctive.libellefrancais&disjunctive.genre&disjunctive.espece&disjunctive.varieteoucultivar&disjunctive.stadedeveloppement&disjunctive.remarquable) et [Monptellier](https://data.montpellier3m.fr/dataset/arbres-dalignement-de-montpellier).  
 Afin de standardiser les données récoltées lors de l'inventaire, la co-construction d'une schéma de données pour l'arbre urbain a été lancée par [Natural Solutions](https://www.natural-solutions.eu/qui-sommes-nous). Ce schéma à pour but d'aller vers une uniformisation des données récoltées sur les arbres en ville afin de mieux les connaitre et les gérer.   
