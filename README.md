@@ -43,7 +43,7 @@ Les mises à jour sont effectuées à partir du fichier communiqué précédemme
 Natural Solutions consolidera ce schéma avec d'autres ateliers de co-construction. Pour en savoir plus : https://www.natural-solutions.eu/blog/le-nouveau-schma-de-donnes-pour-larbre-urbain-se-co-construitnbsp
 
 ## Outil 
-Vous pouvez utiliser l'outil https://ecoteka.org/ pour vous faciliter le travail
+Vous pouvez utiliser l'outil Ecoteka https://www.natural-solutions.eu/ecoteka pour vous faciliter le travail
 
 ## Sources
 Un fichier répertoriant toutes les sources des données ouvertes d'arbres est disponible ici :
